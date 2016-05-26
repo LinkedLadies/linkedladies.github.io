@@ -4,10 +4,8 @@ body {
 }
 
 .container {
-  height: 400px;
   margin: 150px auto 0;
   position: relative;
-  width: 550px;
 }
 
 .logo {
@@ -19,12 +17,12 @@ body {
   position: absolute;
   right: 0;
   top: 10px;
-  width: 500px;
+  width: 50%;
 }
 
 .message {
   position: absolute;
-  right: 0;
+  right: 25%;
   top: 0;
-  width: 170px;
+  width: 10%;
 }
