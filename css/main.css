@@ -8,6 +8,7 @@ footer {
 }
 
 h1 {
+  font-family: Bellota;
   margin: 0 0 20px;
 }
 
@@ -22,6 +23,10 @@ h2 {
 
 .home {
   padding-bottom: 20px;
+}
+
+.intro h2 {
+  margin-bottom: 15px;
 }
 
 .intro img, .home img {
@@ -111,13 +116,14 @@ h2 {
 }
 
 .top {
-  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eff4f4+100 */
-  background: #ffffff; /* Old browsers */
-  background: -moz-linear-gradient(top, #ffffff 0%, #eff4f4 100%); /* FF3.6-15 */
-  background: -webkit-linear-gradient(top, #ffffff 0%,#eff4f4 100%); /* Chrome10-25,Safari5.1-6 */
-  background: linear-gradient(to bottom, #ffffff 0%,#eff4f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eff4f4',GradientType=0 ); /* IE6-9 */
   margin-bottom: 50px;
+
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+50,eff4f4+100 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 50%, #eff4f4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 50%,#eff4f4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 50%,#eff4f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eff4f4',GradientType=0 ); /* IE6-9 */
 }
 
 .top h1 {
@@ -148,4 +154,9 @@ h2 {
 /* LARGE */
 @media(min-width:1200px) {
 
+}
+
+@font-face {
+  font-family: Bellota;
+  src: url("fonts/Bellota-Regular.otf") format("opentype");
 }
