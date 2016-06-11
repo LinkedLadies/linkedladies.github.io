@@ -7,8 +7,11 @@ angular.module('linkedLadiesApp')
         "id": 0,
         "image": "images/team.jpg",
         "title": "Linked Ladies",
-        "p1": "The Linked Ladies build innovative software products that connect people together. In 2013, three young UC Irvine classmates formed an all-female team to complete in a small LA hackathon.",
-        "p2": "Since then, the ladies continued to hack away at problems through creating innovative, full-stack applications, earning several honors and awards along the way. Based in the San Francisco Bay Area, the Linked Ladies create people-centered software solutions that engage and empower users."
+        "paragraphs": [
+          "The Linked Ladies build innovative software products that connect people together.",
+          "In 2013, three young UC Irvine classmates formed an all-female team to complete in a small LA hackathon.",
+          "Since then, the ladies continued to hack away at problems through creating innovative, full-stack applications, earning several honors and awards along the way. Based in the San Francisco Bay Area, the Linked Ladies create people-centered software solutions that engage and empower users."
+        ]
       }
     ];
     this.getIntro = function(index) {
