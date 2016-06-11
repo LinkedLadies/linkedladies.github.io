@@ -15,6 +15,19 @@ h2 {
   margin-bottom: 30px;
 }
 
+.haven-image {
+  background-size: contain;
+  background-image: url("../images/projects/haven_web.jpg")
+}
+
+.home {
+  padding-bottom: 20px;
+}
+
+.intro img, .home img {
+  margin-bottom: 20px;
+}
+
 .navbar {
   background: white;
   opacity: 0.85;
@@ -28,8 +41,14 @@ h2 {
   padding: 0 15px;
 }
 
-.intro img {
-  margin-bottom: 20px;
+.navbar-brand {
+  padding: 0px;
+}
+
+.navbar-brand>img {
+  height: 100%;
+  margin: 15px;
+  width: auto;
 }
 
 .project-image {
@@ -39,16 +58,6 @@ h2 {
 
 .snapmap-image {
   background: url("../images/projects/snapmap.jpg") no-repeat center top;
-}
-
-.troop-image {
-  background-size: cover;
-  background-image: url("../images/projects/troop.jpg");
-}
-
-.haven-image {
-  background-size: contain;
-  background-image: url("../images/projects/haven_web.jpg")
 }
 
 .team-member {
@@ -99,6 +108,25 @@ h2 {
 
 .team-member.blue img {
   border: 3px solid #00E5FF;
+}
+
+.top {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,eff4f4+100 */
+  background: #ffffff; /* Old browsers */
+  background: -moz-linear-gradient(top, #ffffff 0%, #eff4f4 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #ffffff 0%,#eff4f4 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #ffffff 0%,#eff4f4 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#eff4f4',GradientType=0 ); /* IE6-9 */
+  margin-bottom: 50px;
+}
+
+.top h1 {
+  font-size: 3em;
+}
+
+.troop-image {
+  background-size: cover;
+  background-image: url("../images/projects/troop.jpg");
 }
 
 /* SMALL */

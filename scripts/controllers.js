@@ -1,6 +1,9 @@
 'use strict';
 
 angular.module('linkedLadiesApp', [])
+  .controller('HomeController', ['$scope', 'homeFactory', function($scope, homeFactory) {
+    $scope.home = homeFactory.getHome();
+  }])
   .controller('IntroController', ['$scope', 'introFactory', function($scope, introFactory) {
     $scope.intro = introFactory.getIntro(0);
   }])

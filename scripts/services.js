@@ -1,14 +1,23 @@
 'use strict';
 
 angular.module('linkedLadiesApp')
+  .service('homeFactory', function() {
+    var home = {
+      "title": "Linked Ladies",
+      "logo": "images/logo.png",
+      "description": "Connecting People through Innovative Software"
+    };
+    this.getHome = function() {
+      return home;
+    };
+  })
   .service('introFactory', function() {
     var intro = [
       {
         "id": 0,
         "image": "images/team.jpg",
-        "title": "Linked Ladies",
+        "title": "About",
         "paragraphs": [
-          "The Linked Ladies build innovative software products that connect people together.",
           "In 2013, three young UC Irvine classmates formed an all-female team to complete in a small LA hackathon.",
           "Since then, the ladies continued to hack away at problems through creating innovative, full-stack applications, earning several honors and awards along the way. Based in the San Francisco Bay Area, the Linked Ladies create people-centered software solutions that engage and empower users."
         ]
