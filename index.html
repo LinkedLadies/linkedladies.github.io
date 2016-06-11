@@ -50,8 +50,7 @@
           </div>
           <div class="col-md-4">
             <h1>{{intro.title}}</h1>
-            <p>{{intro.p1}}</p>
-            <p>{{intro.p2}}</p>
+            <p ng-repeat="paragraph in intro.paragraphs">{{paragraph}}</p>
           </div>
         </div>
       </div>
@@ -73,7 +72,6 @@
               <p class="text-left">
                 {{project.description}}
               </p>
-              <a class="btn btn-default" href="#">More Info</a>
           </div>
         </div>
       </div>

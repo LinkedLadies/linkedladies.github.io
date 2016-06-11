@@ -7,8 +7,11 @@ angular.module('linkedLadiesApp')
         "id": 0,
         "image": "images/team.jpg",
         "title": "Linked Ladies",
-        "p1": "The Linked Ladies build innovative software products that connect people together. In 2013, three young UC Irvine classmates formed an all-female team to complete in a small LA hackathon.",
-        "p2": "Since then, the ladies continued to hack away at problems through creating innovative, full-stack applications, earning several honors and awards along the way. Based in the San Francisco Bay Area, the Linked Ladies create people-centered software solutions that engage and empower users."
+        "paragraphs": [
+          "The Linked Ladies build innovative software products that connect people together.",
+          "In 2013, three young UC Irvine classmates formed an all-female team to complete in a small LA hackathon.",
+          "Since then, the ladies continued to hack away at problems through creating innovative, full-stack applications, earning several honors and awards along the way. Based in the San Francisco Bay Area, the Linked Ladies create people-centered software solutions that engage and empower users."
+        ]
       }
     ];
     this.getIntro = function(index) {
@@ -22,7 +25,7 @@ angular.module('linkedLadiesApp')
         "title": "SnapMap",
         "imageClass": "snapmap-image",
         "summary": "A Better Way to Find Your Pictures",
-        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ligula odio, fermentum et luctus eu, placerat ut neque. Phasellus ornare quis metus vitae mattis. Suspendisse sagittis velit in erat placerat lobortis quis sed ex. Nunc ullamcorper, velit et lacinia sollicitudin, nulla nunc vehicula ante, et fringilla orci mi non nisi. Praesent vel nibh vel arcu maximus porta."
+        "description": "Our first app together was inspired by the overload of data on social media. We created SnapMap so users can find photos inuitively using location, tagged friends, or number of likes. We created the app in 24 hours and pitched and did a live demo of the app to a panel of venture capitalists for AppHack LA in 2013."
       },
       {
         "id": 1,
