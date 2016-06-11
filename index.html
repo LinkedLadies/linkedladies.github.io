@@ -43,7 +43,7 @@
     </nav>
 
     <div class="container">
-      <div class="container" ng-controller="IntroController">
+      <div class="container intro" ng-controller="IntroController">
         <div class="row">
           <div class="col-md-8">
             <img class="img-responsive" ng-src="{{intro.image}}" alt="Linked Ladies">
@@ -85,19 +85,27 @@
           </div>
         </div>
 
-        <div class="row team" ng-repeat="member in members">
-          <div class="col-md-3">
+        <div class="row team-member {{member.color}}" ng-repeat="member in members">
+          <div class="col-xs-4 col-sm-3 col-md-2">
             <img class="profile-image img-responsive img-circle" ng-src="{{member.image}}" alt="{{member.name}}">
           </div>
-          <div class="col-md-9">
+          <div class="col-xs-8 col-sm-9 col-md-8">
             <h3>{{member.name}}</h3>
             <h4>{{member.designation}}</h4>
-            <p>{{member.personality}}</p>
-            <p>{{member.strengths}}</p>
-            <p>
-              <a class="link" href="{{link.url}}" target="_blank" ng-repeat="link in member.links">{{link.label}}</a>
+            <p class="personality">
+              <span ng-repeat="personality in member.personalities">
+                <a href="{{personality.url}}" target="_blank" title="{{personality.title}}">
+                  {{personality.type}}
+                </a>
+              </span>
             </p>
-            <a class="btn btn-default" href="#">More Info</a>
+            <p class="links">
+              <span ng-repeat="link in member.links">
+                <a href="{{link.url}}" target="_blank" title="{{link.title}}">
+                  <i class="fa {{link.icon}}" aria-hidden="true"></i>
+                </a>
+              </span>
+            </p>
           </div>
         </div>
       </div>

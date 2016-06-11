@@ -55,34 +55,60 @@ angular.module('linkedLadiesApp')
         "id": 0,
         "name": "Jay Tolentino",
         "image": "images/jay.png",
+        "color": "red",
         "designation": "Business Strategy & Engineering",
-        "personality": "INFJ",
-        "strengths": "Restorative, Futuristic, Belief, Achiever, Ideation",
+        "personalities": [
+          {
+            "title": "Myers Briggs",
+            "type": "INFJ",
+            "url": "https://www.16personalities.com/infj-personality"
+          },
+          {
+            "title": "Strengths Finder",
+            "type": "Restorative, Futuristic, Belief, Achiever, Ideation",
+            "url": "http://www.strengthstest.com/strengthsfinderthemes/strengths-themes.html"
+          }
+        ],
         "links": [
           {
-            "label": "LinkedIn",
+            "icon": "fa-linkedin-square",
+            "title": "LinkedIn",
             "url": "https://www.linkedin.com/in/jltolent"
           },
           {
-            "label": "Website",
-            "url": "http://jaytolentino.com/"
+            "icon": "fa-github-alt",
+            "title": "Github",
+            "url": "https://github.com/jaytolentino"
           }
         ]
       },
       {
         "id": 1,
         "name": "Kathy Nguyen",
-        "image": "images/jay.png",
+        "image": "images/kathy.jpg",
+        "color": "yellow",
         "designation": "Product & Design",
-        "personality": "ENFJ",
-        "strengths": "Communication, Woo, Positivity, Ideation, Maximizer",
+        "personalities": [
+          {
+            "title": "Myers Briggs",
+            "type": "ENFJ",
+            "url": "https://www.16personalities.com/enfj-personality"
+          },
+          {
+            "title": "Strengths Finder",
+            "type": "Communication, Woo, Positivity, Ideation, Maximizer",
+            "url": "http://www.strengthstest.com/strengthsfinderthemes/strengths-themes.html"
+          }
+        ],
         "links": [
           {
-            "label": "LinkedIn",
+            "icon": "fa-linkedin-square",
+            "title": "LinkedIn",
             "url": "https://www.linkedin.com/in/nguyenkatherine"
           },
           {
-            "label": "Portfolio",
+            "icon": "fa-paint-brush",
+            "title": "Portfolio",
             "url": "http://kitkatdesign.com/"
           }
         ]
@@ -90,17 +116,30 @@ angular.module('linkedLadiesApp')
       {
         "id": 2,
         "name": "Melody Truong",
-        "image": "images/jay.png",
+        "image": "images/melody.jpg",
+        "color": "blue",
         "designation": "Engineering",
-        "personality": "ESFJ",
-        "strengths": "Restorative, Developer, Achiever, Learner, Arranger",
+        "personalities": [
+          {
+            "title": "Myers Briggs",
+            "type": "ESFJ",
+            "url": "https://www.16personalities.com/esfj-personality"
+          },
+          {
+            "title": "Strengths Finder",
+            "type": "Restorative, Developer, Achiever, Learner, Arranger",
+            "url": "http://www.strengthstest.com/strengthsfinderthemes/strengths-themes.html"
+          }
+        ],
         "links": [
           {
-            "label": "LinkedIn",
+            "icon": "fa-linkedin-square",
+            "title": "LinkedIn",
             "url": "https://www.linkedin.com/in/truongmm"
           },
           {
-            "label": "Github",
+            "icon": "fa-github-alt",
+            "title": "Github",
             "url": "https://github.com/truongmm"
           }
         ]
