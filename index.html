@@ -44,86 +44,83 @@
         </div>
       </nav>
 
-      <div class="container" id="home">
-        <div class="container" ng-controller="HomeController">
-          <div class="row home">
-            <div class="col-md-12 text-center">
-              <img class="img-responsive center-block" ng-src="{{home.logo}}" alt="Linked Ladies logo">
-              <h1>{{home.title}}</h1>
-              <h3>{{home.description}}</h3>
-            </div>
+      <div class="container section" id="home" ng-controller="HomeController">
+        <div class="row home">
+          <div class="col-md-12 text-center">
+            <img class="img-responsive center-block" ng-src="{{home.logo}}" alt="Linked Ladies logo">
+            <h1>{{home.title}}</h1>
+            <h3>{{home.description}}</h3>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="container" id="about">
-      <div class="container intro" ng-controller="IntroController">
-        <div class="row">
-          <div class="col-md-8">
-            <img class="img-responsive" ng-src="{{intro.image}}" alt="Linked Ladies">
-          </div>
-          <div class="col-md-4">
-            <h2>{{intro.title}}</h2>
-            <p ng-repeat="paragraph in intro.paragraphs">{{paragraph}}</p>
-          </div>
+    <div class="container intro section" id="about" ng-controller="IntroController">
+      <div class="row">
+        <div class="col-md-8">
+          <img class="img-responsive" ng-src="{{intro.image}}" alt="Linked Ladies">
+        </div>
+        <div class="col-md-4">
+          <h2>{{intro.title}}</h2>
+          <p ng-repeat="paragraph in intro.paragraphs">{{paragraph}}</p>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="container section" ng-controller="ProjectsController" id="projects">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>{{title}}</h2>
         </div>
       </div>
 
-      <hr />
-
-      <div class="container" ng-controller="ProjectsController" id="projects">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>{{title}}</h2>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-md-4 text-center" ng-repeat="project in projects">
-            <div class="project-image {{project.imageClass}}"></div>
-              <h3>{{project.title}}</h3>
-              <h4>{{project.summary}}</h4>
-              <p class="text-left">
-                {{project.description}}
-              </p>
-          </div>
-        </div>
-      </div>
-
-      <hr />
-
-      <div class="container" ng-controller="TeamController" id="team">
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>{{title}}</h2>
-          </div>
-        </div>
-
-        <div class="row team-member {{member.color}}" ng-repeat="member in members">
-          <div class="col-xs-4 col-sm-3 col-md-2">
-            <img class="profile-image img-responsive img-circle" ng-src="{{member.image}}" alt="{{member.name}}">
-          </div>
-          <div class="col-xs-8 col-sm-9 col-md-8">
-            <h3>{{member.name}}</h3>
-            <h4>{{member.designation}}</h4>
-            <p class="personality">
-              <span ng-repeat="personality in member.personalities">
-                <a href="{{personality.url}}" target="_blank" title="{{personality.title}}">
-                  {{personality.type}}
-                </a>
-              </span>
+      <div class="row">
+        <div class="col-md-4 text-center" ng-repeat="project in projects">
+          <div class="project-image {{project.imageClass}}"></div>
+            <h3>{{project.title}}</h3>
+            <h4>{{project.summary}}</h4>
+            <p class="text-left">
+              {{project.description}}
             </p>
-            <p class="links">
-              <span ng-repeat="link in member.links">
-                <a href="{{link.url}}" target="{{link.openWindow ? '_blank' : '_self'}}" title="{{link.title}}">
-                  <i class="fa {{link.icon}}" aria-hidden="true"></i>
-                </a>
-              </span>
-            </p>
-          </div>
         </div>
       </div>
+    </div>
+
+    <hr />
+
+    <div class="container section" ng-controller="TeamController" id="team">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>{{title}}</h2>
+        </div>
+      </div>
+
+      <div class="row team-member {{member.color}}" ng-repeat="member in members">
+        <div class="col-xs-4 col-sm-3 col-md-2">
+          <img class="profile-image img-responsive img-circle" ng-src="{{member.image}}" alt="{{member.name}}">
+        </div>
+        <div class="col-xs-8 col-sm-9 col-md-8">
+          <h3>{{member.name}}</h3>
+          <h4>{{member.designation}}</h4>
+          <p class="personality">
+            <span ng-repeat="personality in member.personalities">
+              <a href="{{personality.url}}" target="_blank" title="{{personality.title}}">
+                {{personality.type}}
+              </a>
+            </span>
+          </p>
+          <p class="links">
+            <span ng-repeat="link in member.links">
+              <a href="{{link.url}}" target="{{link.openWindow ? '_blank' : '_self'}}" title="{{link.title}}">
+                <i class="fa {{link.icon}}" aria-hidden="true"></i>
+              </a>
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
 
       <hr />
 
