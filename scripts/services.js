@@ -72,13 +72,20 @@ angular.module('linkedLadiesApp')
         "links": [
           {
             "icon": "fa-linkedin-square",
+            "openWindow": true,
             "title": "LinkedIn",
             "url": "https://www.linkedin.com/in/jltolent"
           },
           {
             "icon": "fa-github-alt",
+            "openWindow": true,
             "title": "Github",
             "url": "https://github.com/jaytolentino"
+          },
+          {
+            "icon": "fa-envelope",
+            "title": "Email",
+            "url": "mailto:jay@linkedladies.com"
           }
         ]
       },
@@ -103,13 +110,20 @@ angular.module('linkedLadiesApp')
         "links": [
           {
             "icon": "fa-linkedin-square",
+            "openWindow": true,
             "title": "LinkedIn",
             "url": "https://www.linkedin.com/in/nguyenkatherine"
           },
           {
             "icon": "fa-paint-brush",
+            "openWindow": true,
             "title": "Portfolio",
             "url": "http://kitkatdesign.com/"
+          },
+          {
+            "icon": "fa-envelope",
+            "title": "Email",
+            "url": "mailto:kathy@linkedladies.com"
           }
         ]
       },
@@ -134,13 +148,20 @@ angular.module('linkedLadiesApp')
         "links": [
           {
             "icon": "fa-linkedin-square",
+            "openWindow": true,
             "title": "LinkedIn",
             "url": "https://www.linkedin.com/in/truongmm"
           },
           {
             "icon": "fa-github-alt",
+            "openWindow": true,
             "title": "Github",
             "url": "https://github.com/truongmm"
+          },
+          {
+            "icon": "fa-envelope",
+            "title": "Email",
+            "url": "mailto:melody@linkedladies.com"
           }
         ]
       }

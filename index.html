@@ -101,7 +101,7 @@
             </p>
             <p class="links">
               <span ng-repeat="link in member.links">
-                <a href="{{link.url}}" target="_blank" title="{{link.title}}">
+                <a href="{{link.url}}" target="{{link.openWindow ? '_blank' : '_self'}}" title="{{link.title}}">
                   <i class="fa {{link.icon}}" aria-hidden="true"></i>
                 </a>
               </span>
