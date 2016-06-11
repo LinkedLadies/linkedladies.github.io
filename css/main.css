@@ -1,29 +1,18 @@
 body {
 	margin: 0px;
-  padding-top: 70px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+  padding-top: 80px;
 }
 
 footer {
   padding: 30px 0;
 }
 
-.logo {
-  border: 1px solid gray;
-  bottom: 0;
-  display: block;
-  left: 0;
-  margin: 0 auto;
-  position: absolute;
-  right: 0;
-  top: 10px;
-  width: 50%;
+h1 {
+  margin: 0 0 20px;
 }
 
-.message {
-  position: absolute;
-  right: 25%;
-  top: 0;
-  width: 10%;
+h2 {
+  margin-bottom: 30px;
 }
 
 .navbar {
@@ -37,6 +26,10 @@ footer {
 
 .navbar-fixed-top .navbar-brand {
   padding: 0 15px;
+}
+
+.intro img {
+  margin-bottom: 20px;
 }
 
 .project-image {
@@ -58,16 +51,73 @@ footer {
   background-image: url("../images/projects/haven_web.jpg")
 }
 
-.team .link {
-  margin-right: 5px;
+.team-member {
+  margin-bottom: 30px;
 }
 
+.team-member div {
+  float: left;
+}
+
+.team-member .personality span {
+  border-left: 1px solid;
+  padding: 0 7px;
+}
+
+.team-member .personality span:first-child {
+  border: none;
+  padding-left: 0;
+}
+
+.team-member .personality a {
+  color: black;
+}
+
+.team-member h4 {
+  color: #777;
+}
+
+.team-member h3, h4 {
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.team-member .links a {
+  color: #448AFF;
+  font-size: 24px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.team-member.red img {
+  border: 3px solid #FF4081;
+}
+
+.team-member.yellow img {
+  border: 3px solid #FFEA00;
+}
+
+.team-member.blue img {
+  border: 3px solid #00E5FF;
+}
+
+/* SMALL */
 @media(min-width:768px) {
   body {
-    padding-top: 100px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */
+    padding-top: 100px;
   }
 
   .navbar-fixed-top .navbar-brand {
     padding: 15px 0;
   }
+}
+
+/* MEDIUM */
+@media(min-width:992px) {
+
+}
+
+/* LARGE */
+@media(min-width:1200px) {
+
 }
