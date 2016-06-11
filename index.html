@@ -6,9 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Linked Ladies</title>
 
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
+    <link href="css/libraries/bootstrap.min.css" rel="stylesheet">
+    <link href="css/libraries/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/libraries/font-awesome.min.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   </head>
 
@@ -23,7 +23,7 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">
-            <img class="navbar-brand" src="images/logo.jpg" alt="">
+            <img class="navbar-brand" ng-src="images/logo.jpg" alt="Linked Ladies Logo">
           </a>
         </div>
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -46,7 +46,7 @@
       <div class="container" ng-controller="IntroController">
         <div class="row">
           <div class="col-md-8">
-            <img class="img-responsive" src="{{intro.image}}" alt="">
+            <img class="img-responsive" ng-src="{{intro.image}}" alt="Linked Ladies">
           </div>
           <div class="col-md-4">
             <h1>{{intro.title}}</h1>
@@ -89,7 +89,7 @@
 
         <div class="row team" ng-repeat="member in members">
           <div class="col-md-3">
-            <img class="profile-image img-responsive img-circle" src="{{member.image}}" alt="{{member.name}}">
+            <img class="profile-image img-responsive img-circle" ng-src="{{member.image}}" alt="{{member.name}}">
           </div>
           <div class="col-md-9">
             <h3>{{member.name}}</h3>
@@ -115,9 +115,9 @@
       </footer>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular-resource.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.0/angular-ui-router.min.js"></script>
+    <script src="scripts/libraries/angular.min.js"></script>
+    <script src="scripts/libraries/angular-resource.min.js"></script>
+    <script src="scripts/libraries/angular-ui-router.min.js"></script>
     <script src="scripts/controllers.js"></script>
     <script src="scripts/services.js"></script>
   </body>
