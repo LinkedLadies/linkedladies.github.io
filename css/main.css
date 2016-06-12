@@ -22,7 +22,7 @@ h2 {
 }
 
 .home {
-  padding: 40px 30px 60px;
+  padding: 50px 30px 80px;
 }
 
 .home h3 {
@@ -155,10 +155,6 @@ h2 {
 
   footer.container {
     padding: 20px 0 30px;
-  }
-
-  .home {
-    padding: 20px 30px 50px;
   }
 
   .home h3 {
