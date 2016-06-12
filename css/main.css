@@ -3,8 +3,8 @@ body {
   padding-top: 80px;
 }
 
-footer {
-  padding: 20px 0 30px;
+footer.container {
+  padding: 20px 30px 30px;
 }
 
 h1 {
@@ -13,16 +13,16 @@ h1 {
 }
 
 h2 {
-  margin-bottom: 30px;
-}
-
-.section {
-  padding: 50px 0 30px;
+  margin: 0 0 20px;
 }
 
 .haven-image {
   background-size: contain;
   background-image: url("../images/projects/haven_web.jpg")
+}
+
+.home {
+  padding: 40px 30px 60px;
 }
 
 .home h3 {
@@ -38,11 +38,7 @@ h2 {
 }
 
 .intro h2 {
-  margin-bottom: 15px;
-}
-
-.intro img, .home img {
-  margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .navbar {
@@ -51,14 +47,6 @@ h2 {
   font-size: 18px;
   letter-spacing: 0.6px;
   opacity: 0.95;
-}
-
-.navbar-fixed-top .nav {
-  padding: 15px 0;
-}
-
-.navbar-fixed-top .navbar-brand {
-  padding: 0 15px;
 }
 
 .navbar-brand {
@@ -71,9 +59,21 @@ h2 {
   width: auto;
 }
 
+.navbar-fixed-top .nav {
+  padding: 15px 0;
+}
+
+.navbar-fixed-top .navbar-brand {
+  padding: 0 15px;
+}
+
 .project-image {
   width: 100%;
   height: 250px;
+}
+
+.section {
+  padding: 80px 30px 30px;
 }
 
 .snapmap-image {
@@ -88,6 +88,26 @@ h2 {
   float: left;
 }
 
+.team-member h3, h4 {
+  line-height: 1.2;
+  margin-top: 0;
+}
+
+.team-member h4 {
+  color: #777;
+}
+
+.team-member .links a {
+  color: #448AFF;
+  font-size: 24px;
+  margin-right: 5px;
+  text-decoration: none;
+}
+
+.team-member .personality a {
+  color: black;
+}
+
 .team-member .personality span {
   border-left: 1px solid;
   padding: 0 7px;
@@ -98,24 +118,8 @@ h2 {
   padding-left: 0;
 }
 
-.team-member .personality a {
-  color: black;
-}
-
-.team-member h4 {
-  color: #777;
-}
-
-.team-member h3, h4 {
-  line-height: 1.2;
-  margin-top: 0;
-}
-
-.team-member .links a {
-  color: #448AFF;
-  font-size: 24px;
-  margin-right: 5px;
-  text-decoration: none;
+.team-member.blue img {
+  border: 3px solid #00E5FF;
 }
 
 .team-member.red img {
@@ -124,10 +128,6 @@ h2 {
 
 .team-member.yellow img {
   border: 3px solid #FFEA00;
-}
-
-.team-member.blue img {
-  border: 3px solid #00E5FF;
 }
 
 .top {
@@ -153,8 +153,12 @@ h2 {
     padding-top: 100px;
   }
 
+  footer.container {
+    padding: 20px 0 30px;
+  }
+
   .home {
-    padding: 20px 0 50px;
+    padding: 20px 30px 50px;
   }
 
   .home h3 {
@@ -165,8 +169,8 @@ h2 {
     width: 25%;
   }
 
-  .navbar-fixed-top .navbar-brand {
-    padding: 15px 0;
+  .intro h2 {
+    margin-top: 0;
   }
 
   .navbar-brand {
@@ -177,8 +181,12 @@ h2 {
     height: 100%;
   }
 
+  .navbar-fixed-top .navbar-brand {
+    padding: 15px 0;
+  }
+
   .section {
-    padding: 80px 0 30px;
+    padding: 110px 0 30px;
   }
 }
 
