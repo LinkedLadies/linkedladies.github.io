@@ -49,6 +49,15 @@ h2 {
   opacity: 0.95;
 }
 
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:focus,
+.navbar-default .navbar-nav .active a:hover {
+  background: none;
+  box-shadow: none;
+  color: black;
+  font-weight: 400;
+}
+
 .navbar-brand {
   display: none;
   padding: 0;
