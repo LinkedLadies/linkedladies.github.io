@@ -65,7 +65,7 @@ angular.module('linkedLadiesApp')
         "name": "Jay Tolentino",
         "image": "images/jay.png",
         "color": "red",
-        "designation": "Business Strategy & Engineering",
+        "designation": "Strategy & Engineering",
         "personalities": [
           {
             "title": "Myers Briggs",
@@ -141,7 +141,7 @@ angular.module('linkedLadiesApp')
         "name": "Melody Truong",
         "image": "images/melody.jpg",
         "color": "blue",
-        "designation": "Engineering",
+        "designation": "Architecture & Engineering",
         "personalities": [
           {
             "title": "Myers Briggs",
