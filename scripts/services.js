@@ -1,16 +1,6 @@
 'use strict';
 
 angular.module('linkedLadiesApp')
-  .service('homeFactory', function() {
-    var home = {
-      "title": "Linked Ladies",
-      "logo": "images/logo.png",
-      "description": "Connecting People through Innovative Software"
-    };
-    this.getHome = function() {
-      return home;
-    };
-  })
   .service('introFactory', function() {
     var intro = [
       {
