@@ -39,6 +39,13 @@ angular.module('linkedLadiesApp')
         "imageClass": "haven-image",
         "summary": "Cross-Platform Community Disaster Relief",
         "description": "'Haven' was inspired by the local wildfires in Napa Valley for TechCrunch Disrupt Hackathon in SF. We wanted to create a cross-device platform where a victim in an emergency disaster can bring awareness to their community to ultimately receive help. Once an incident is reported, the community is notified of a direct method to offer aid. First responders can locate those who need medical attention; a local neighbor can offer up their spare room for shelter."
+      },
+      {
+        "id": 3,
+        "title": "Aloe",
+        "imageClass": "aloe-image",
+        "summary": "Accessible Healthcare Software",
+        "description": "Aloe is healthcare software made with the patient in mind. After Kathy's father struggled navigating the healthcare system as a non-native English speaker, we created Aloe to simplify often confusing and redundant patient intake forms. With feedback from users, we focused the app on translation, a major pain point for both doctors and patients."
       }
     ];
     this.getProject = function(index) {
