@@ -1,3 +1,10 @@
+.aloe-image {
+  background-size: cover;
+  background-image: url("../images/projects/aloe.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
 body {
   margin: 0;
   padding-top: 80px;
@@ -17,8 +24,10 @@ h2 {
 }
 
 .haven-image {
-  background-size: contain;
-  background-image: url("../images/projects/haven_web.jpg")
+  background-size: cover;
+  background-image: url("../images/projects/haven_web.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .home {
